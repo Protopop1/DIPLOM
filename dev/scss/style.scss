@@ -1,0 +1,287 @@
+body{
+  font-family: "Raleway", sans-serif;
+}
+//все ссылки по сайту
+a {
+  color: white;
+  text-decoration: none;
+
+
+
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+//ЛЕВАЯ НАВИГАЦИЯ
+.side-bar {
+  min-height: 100vh;
+  position: fixed;
+
+  .logo {
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+
+    padding: 25px;
+    background-color: white;
+    border-radius: 50%;
+
+  }
+
+  background-color: #0171B9;
+  padding: 50px 0 30px;
+
+  ul.list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 15px;
+
+    }
+  }
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+
+  a:hover::after {
+    width: 100%;
+    left: 0;
+
+  }
+
+  .white-line {
+    background-color: #ffffff;
+    width: 90%;
+    height: 2px;
+    z-index: 10;
+  }
+}
+.blue-line {
+  background-color: #247dc2;
+  width: 30%;
+  height: 2px;
+  margin: 0 auto;
+}
+
+//ПАРАЛЛАКС
+.top-section {
+  padding: 0;
+}
+
+.parallax {
+  background: url("../img/bg-picture1.png") no-repeat left;
+  height: 700px;
+  width: 100%;
+
+
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  background-position: 270px 15%;
+}
+
+.parallax-title {
+  width: 100%;
+  min-height: 100% !important;
+  position: absolute;
+  align-items: center;
+
+  h1 {
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 20px 50px;
+    color: white;
+    width: 70%;
+    font-family: "Raleway", fantasy;
+
+
+  }
+}
+
+//МОИ ДАННЫЕ
+.resume {
+  padding: 100px 0 100px 30px;
+
+  .main-profile p {
+    margin-bottom: 0;
+    font-size: 20px;
+
+
+  }
+}
+.table-content {
+  h3{
+    margin: 0;
+  }
+}
+
+//таблица на главной
+.table.table-striped {
+  margin-top: 50px ;
+  background-color: #F5F5F5;
+}
+.my-table {
+  padding: 20px 0;
+  h3{
+    font-weight: bold;
+  }
+
+  table {
+    tbody {
+      tr {
+        td {
+
+          p {
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+td:nth-child(1) {
+  width: 300px;
+}
+
+//БИОГРАФИЯ
+.bio {
+  padding: 20px 0;
+  h3{
+    font-weight: bold;
+  }
+
+
+  .bio-text {
+    margin-top: 50px;
+    background-color: #F5F5F5;
+    padding: 15px 15px;
+
+
+    h5 {
+      margin: 0 0 20px 0;
+      font-weight: bold;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+  }
+}
+
+//РЕФЕРАТ
+.diss {
+  padding: 20px 0;
+  background-color: #F5F5F5;
+
+
+  .diss-text {
+    h5 {
+      margin: 0 0 20px 0;
+    }
+
+    ol {
+      padding: 0 0 20px 0;
+      list-style-type: none;
+    }
+
+    a {
+      color: black;
+    }
+
+    p {
+      text-align: justify;
+
+    }
+
+  }
+}
+
+//Бибилотека
+.library {
+  padding: 20px 0;
+  background-color: #F5F5F5;
+
+
+  .library-text {
+    ol {
+      padding: 20px 0 20px 20px;
+
+      li {
+        padding-bottom: 20px;
+      }
+    }
+
+    p {
+      margin: 15px 0 15px 0;
+      text-align: justify;
+    }
+  }
+}
+
+//ССЫЛКИ
+.links {
+  padding: 20px 0;
+  background-color: #F5F5F5;
+
+
+  .links-text {
+    ol {
+      padding: 20px 0 0 20px;
+      margin: 0;
+
+      li {
+        padding-bottom: 20px;
+      }
+    }
+
+    p {
+      margin: 15px 0 15px 0;
+      text-align: justify;
+    }
+
+  }
+}
+
+//ОТЧЕТ О ПОИСКЕ
+.zvit {
+  padding: 20px 0;
+  background-color: #F5F5F5;
+
+  .zvit-text {
+   p {
+      margin: 15px 0 15px 0;
+      text-align: justify;
+    }
+   h4{
+     margin: 0 0 15px 0;
+   }
+
+  }
+
+}
